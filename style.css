@@ -828,7 +828,7 @@ NEWS
 .home_message--en svg{
   position: absolute;
   top: 330px;
-  right: -75px;
+  right: -180px;
   display:block;
   width:140px;
   height:auto;
@@ -844,7 +844,7 @@ NEWS
   position: absolute;
 
   top: 370px;
-  right: -235px;
+  right: -340px;
 
   width: 150px; /* 線の長さ */
   height: 1px;  /* 線の太さ */
@@ -2467,6 +2467,8 @@ letter-spacing: 0.1em;}
   position: relative;
   /* 赤線の下（募集要項の上）に余白 */
   padding-top: 60px;
+  /* 他ページ(.recruit)と揃え、ENTRYアニメーションの表示領域を確保 */
+  padding-bottom: 170px;
 }
 
 .recruit1::before {
