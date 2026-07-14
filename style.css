@@ -828,7 +828,7 @@ NEWS
 .home_message--en svg{
   position: absolute;
   top: 330px;
-  right: -180px;
+  right: -330px;
   display:block;
   width:140px;
   height:auto;
@@ -844,7 +844,7 @@ NEWS
   position: absolute;
 
   top: 370px;
-  right: -340px;
+  right: -490px;
 
   width: 150px; /* 線の長さ */
   height: 1px;  /* 線の太さ */
@@ -1630,6 +1630,11 @@ letter-spacing: 0.1em;}
   position: relative;
   padding-top: 100px;   /* 旧margin-top。背景で塗るためpaddingに変更 */
   background: #fff8f8;   /* ENTRYから赤枠上まで薄ピンク */
+}
+
+/* ホーム（トップページ）のみ ENTRY アニメーション背景を白に */
+body:not(.sub-page) .cta {
+  background: #fff;
 }
 
 .cta--loop ul {
