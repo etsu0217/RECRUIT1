@@ -2296,6 +2296,10 @@ letter-spacing: 0.1em;}
 ========================== */
 .interview-area{
   position: relative;
+  /* .page-title(Interview)がz-index:100で右のmember-areaに重なるため、
+     セクションごと前面に出して背面へ回す。
+     赤枠(999)・固定ナビ(10000〜)より下は維持 */
+  z-index: 200;
   display:flex;
   align-items:flex-start;
   justify-content:space-between;   /* 余白を右に寄せず、写真＝左端／カード＝右端で均等に */
