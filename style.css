@@ -2506,7 +2506,7 @@ letter-spacing: 0.1em;}
   padding-top: 30px; /* 線と中身の余白 */
   /* カード下端と赤帯の間隔。左のスライドは下端を赤帯に接させるため、
      カード側だけここで余白を作る。間隔の調整はこの数値だけで完結する */
-  padding-bottom: 80px;
+  padding-bottom: 30px;
 }
 
 .recruit1 {
