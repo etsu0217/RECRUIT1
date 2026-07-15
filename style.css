@@ -3456,9 +3456,9 @@ letter-spacing: 0.1em;}
     align-items: flex-start;   /* 大見出しを左詰め */
     text-align: left;
   }
-  .fz-88{ font-size: 1.8rem; }
-  .fz-48{ font-size: 1.1rem; }
-  .fz-112{ font-size: 1.9rem; }
+  .fz-88{ font-size: 1.3rem; }
+  .fz-48{ font-size: 0.6rem; }
+  .fz-112{ font-size: 1.4rem; }
   .home_message--en-v,
   .home_message--deco,
   .home_message--deco02,
