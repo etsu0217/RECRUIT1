@@ -2296,9 +2296,11 @@ letter-spacing: 0.1em;}
 ========================== */
 .interview-area{
   position: relative;
-  /* .page-title(Interview)がz-index:100で右のmember-areaに重なるため、
-     セクションごと前面に出して背面へ回す（.interview-area2 と同じ手法） */
+  /* .page-title(Interview)がz-index:100でヘッダーからはみ出して重なるため、
+     セクションごと前面に出して背面へ隠す（.interview-area2 と同じ手法）。
+     背景が透明だとカードの隙間から文字が透けるので body と同じ色を敷く */
   z-index: 101;
+  background: #fff8f8;
   display:flex;
   align-items:flex-start;
   justify-content:space-between;   /* 余白を右に寄せず、写真＝左端／カード＝右端で均等に */
