@@ -3536,7 +3536,7 @@ letter-spacing: 0.1em;}
     position: relative;
     padding-top: 0;
     top: 0;
-    left: -5px;
+    left: -7px;
     width: 100%;
     max-width: none;
     aspect-ratio: 900 / 560;  /* 足の付け根で下をカット（画面幅に追従） */
@@ -3870,7 +3870,7 @@ letter-spacing: 0.1em;}
     max-width: 240px;
     padding: 14px 16px;
     top: 0;
-    left: -2;
+    left: 0;
     text-align: left;
     border-radius: 0 0 20px 20px;
   }
