@@ -1090,7 +1090,9 @@ NEWS
 
 .people_center{
   color: #fff;
-  font-size: 130px;
+  /* 130pxだと中央列が624pxを占め、左右の1fr列が本文25文字分に足りず
+     <br>の4行がさらに折り返してしまうため縮小 */
+  font-size: 100px;
   font-weight: 600;
   line-height: 1;
   text-align: center;
@@ -1103,7 +1105,9 @@ NEWS
 
 .people_right{
   color: #fff;
-  font-size: 15px;
+  /* 最長25文字 × 13px × letter-spacing込み ≒ 374px。1440px画面(inner 1296px)
+     でも列幅403pxに収まる。15pxだと溢れて<br>の4行がさらに折り返す */
+  font-size: 13px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.15em;
