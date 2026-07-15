@@ -2,7 +2,9 @@
 
 :root{
   --font-en: 'Montserrat', sans-serif;
-  --font-jp: "見出ゴMB31", "Midashi Go MB31";
+  /* 見出ゴMB31はローカル環境にしか無くスマホ等では別書体になるため、
+     HTMLで読み込み済みの Noto Sans JP に統一 */
+  --font-jp: "Noto Sans JP", sans-serif;
   --clr-wht: #fff;
   --clr-main: #D92B44;
   --clr-sub: #FFEDEF;
@@ -529,7 +531,7 @@ body{
 }
 
 .menu-box a{
-  font-family: '見出ゴMB31';
+  font-family: var(--font-jp);
   color: #000;
   font-weight: bolder;
   font-size: 15xp;
@@ -1539,7 +1541,7 @@ letter-spacing: 0.1em;}
 
 /* 日本語 */
 .recruit-box h3 {
-  font-family: "見出ゴMB31", "Midashi Go MB31", sans-serif;
+  font-family: var(--font-jp);
   font-size: 3rem;
   font-weight: 600;
   color: #000;
@@ -2050,7 +2052,7 @@ body:not(.sub-page) .cta {
 }
 
 .cta--ttl span{
-  font-family: "見出ゴMB31", "Midashi Go MB31";
+  font-family: var(--font-jp);
 }
 
 .fz-70 { font-size: 50px;  color: #000;   letter-spacing: 0.1em;}
@@ -2199,7 +2201,7 @@ letter-spacing: 0.1em;}
 .footer--info p{
   line-height: 1.6;
   font-size: 15px;
-  font-family: "見出ゴMB31", "Midashi Go MB31";
+  font-family: var(--font-jp);
 }
 /* 先輩インタビュー　ページ */
 
@@ -2260,7 +2262,7 @@ letter-spacing: 0.1em;}
 }
 
 .arrow{
-  font-family: '見出ゴMB31';
+  font-family: var(--font-jp);
   font-weight: Bold;
   font-size: 5px; 
   position: relative;
