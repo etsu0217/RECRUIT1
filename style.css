@@ -2319,7 +2319,8 @@ letter-spacing: 0.1em;}
   top: 40px;
   align-self: flex-start;
   margin-top: 0;
-  /* 下端を赤帯(.recruit1::before)の上端で止める（赤帯は上に48pxはみ出して配置） */
+  /* 下端の余白。赤帯(.recruit1::before)は .recruit1 の内側(top:0)へ移したので
+     ここで位置を合わせる必要はなくなった */
   margin-bottom: 48px;
   z-index: 100;
 }
@@ -2510,8 +2511,9 @@ letter-spacing: 0.1em;}
 
 .recruit1 {
   position: relative;
-  /* 赤線の下（募集要項の上）に余白 */
-  padding-top: 60px;
+  /* 赤線の下（募集要項の上）に余白。旧60px＋赤帯を48px下げた分＝108pxで
+     赤帯と見出しの間隔(68px)を従来どおり維持 */
+  padding-top: 108px;
   /* 他ページ(.recruit)と揃え、ENTRYアニメーションの表示領域を確保 */
   padding-bottom: 170px;
 }
@@ -2519,7 +2521,9 @@ letter-spacing: 0.1em;}
 .recruit1::before {
   content: "";
   position: absolute;
-  top: -48px;
+  /* 以前は -48px で上のカード領域へ食い込み、カードと重なっていた。
+     0 にして .recruit1 の内側に収め、構造的に重なり得なくする */
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 1450px;       /* 線の長さ */
