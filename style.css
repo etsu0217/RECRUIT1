@@ -2076,7 +2076,10 @@ letter-spacing: 0.1em;}
   display: block;
   margin: 0 auto;
   position: relative;
-  top: -60px;                        /* 人物画像を上へ詰める */
+  /* relative なのでレイアウト高さは画像のまま。.cta1 は margin-bottom:-20px で
+     フッターを20px引き上げているので、-20px にすると画像の下端が
+     フッターの黒線(border-top)にちょうど接する */
+  top: -20px;
   width: 100%;
   max-width: calc(100% - 300px);     /* .home_message(.inner-xl)と同じ本文幅に収める */
   height: auto;
@@ -3546,7 +3549,7 @@ letter-spacing: 0.1em;}
       linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)),
       url("images/message-bg.png");
     background-size: cover;
-    background-position: center;
+    background-position: calc(50% - 2px) center;   /* message-bg を左へ2px */
     background-repeat: no-repeat;
   }
 
@@ -3569,13 +3572,15 @@ letter-spacing: 0.1em;}
   }
   .people_left h2{
     margin-left: 0;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.4;
     letter-spacing: 0.06em;
   }
   .people_center{
     grid-area: center;
-    font-size: 44px;
+    /* 44pxだと中央列が約211pxを占め、左列が見出し「地域経済を動かす、」
+       9文字(約143px)に足りず<br>の2行がさらに折り返すため縮小 */
+    font-size: 40px;
     text-align: right;
   }
   .people_right{
